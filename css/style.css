@@ -5,13 +5,25 @@
 /*}*/
 
 #header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: flex;  /*ロゴとグローバルナビゲーションを横並びにする*/
+  justify-content: space-between;  /*両端に配置する*/
+  align-items: center;  /*高さを中央で揃える*/
   margin: 0 auto;
 }
 
 #header ul{
-  display: flex;
+  display: flex;  /*メニューを横並びにする*/
   padding: 10px 0;
+}
+
+#header li{
+  margin-left: 30px;
+}
+
+#header li a{
+  color: #24292e;
+}
+
+#header li a:hover{  /*メニューにマウスを乗せた時に少し透過させる*/
+  opacty: 0.7;
 }
