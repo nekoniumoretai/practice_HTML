@@ -87,15 +87,15 @@ li{
 }
 
 #about .content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex;  /*画像とテキストを横並びに配置*/
+  justify-content: center;  /*中央に配置*/
+  align-items: center;  /*高さの中心で配置*/
 }
 
 #about img{
-  width: 100px;
+  width: 100px;  /*画像の高さと横幅を指定*/
   height: 100px;
-  border-radius: 50%;
+  border-radius: 50%;  /*画像の角を丸く切り取る*/
   margin-right: 30px;
 }
 
@@ -103,7 +103,20 @@ li{
   text-align: left;
 }
 
+#bicycle ul{
+  display: flex;  /*横並びに配置*/
+  justify-content: space-between;  /*両端揃えにする*/
+}
 
+#bicycle li{
+  width: 32%;  /*画面幅を狭めた際に画像の横幅も狭まるようサイズは％で指定*/
+}
+
+#footer{
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
 
 
 /*レスポンシブ対応*/
@@ -114,11 +127,20 @@ li{
   }    /*100vhは画面の縦幅いっぱいの高さを表しているが、このままだとヘッダーの高さ分（60px）だけはみ出してしまうので、-60pxすることで画面下ちょうどでおさまるようにしている。*/
 
   #about .content{
-    flex-direction: column;
+    flex-direction: column;  /*スマホでは縦に並べる*/
   }
 
   #about img{
     margin-right: 0;
+  }
+
+  #bicycle ul{
+    flex-direcrion: column;  /*スマホでは縦に並べる*/
+  }
+
+  #bicycle li{
+    width: 100%;
+    margin-bottom: 30px;
   }
 
 }
