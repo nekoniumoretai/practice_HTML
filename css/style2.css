@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/**{*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+html{
+  font-size: 100%;
+}
+
+body{
+  color: #fff;
+  font-size: 1rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+.site-title{
+  width: 120px;
+  line-height: 1px;
+  padding: 10px 0;
+}
+
+.site-title a{
+  display: block;
+}
+
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
